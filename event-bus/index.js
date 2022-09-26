@@ -8,8 +8,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use("/events", (req, res) => {
-    const { event } = req.body;
+app.post("/events", (req, res) => {
+    const event = req.body;
 
     axios.post("http://localhost:4000/events", event)
         .catch(err => console.log(err));
@@ -18,7 +18,7 @@ app.use("/events", (req, res) => {
     axios.post("http://localhost:4002/events", event)
         .catch(err => console.log(err));
     
-    res.status(200).send({message: success});
+    res.send({message: "success"});
 });
 
 app.listen(4005, () => {
