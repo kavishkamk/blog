@@ -10,3 +10,5 @@
 - set Loadbalancer using [ "Ingress-Nginx" ](https://github.com/kubernetes/ingress-nginx)
 - use [ dockerhub ](https://hub.docker.com/) to handle images
 - [ Skaffold ](https://skaffold.dev/) for automate development process [ (./skaffold.yaml) ](https://github.com/kavishkamk/blog/blob/main/skaffold.yaml)
+
+<img src="https://github.com/kavishkamk/blog/blob/main/images/ArchitectureDiagram.png" alt="Alt text" title="Architecture Diagram">
